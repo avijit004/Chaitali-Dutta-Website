@@ -1,0 +1,56 @@
+/*=============== WORK ===============*/
+.work{
+    &__container{
+        padding-top: 1rem;
+    }
+    &__filters{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: .75rem;
+        margin-bottom: 2rem;
+    }
+    &__item{
+        cursor: pointer;
+        color: var(--title-color);
+        padding: .25rem .75rem;
+        font-weight: var(--font-medium);
+        border-radius: .5rem;
+    }
+    &__card{
+        background-color: var(--container-color);
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    &__img{
+        border-radius: 1rem;
+        margin-bottom: .75rem;
+    }
+    &__title{
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+        margin-bottom: .25rem;
+    }
+    &__button{
+        width: max-content;
+        color: var(--first-color);
+        font-size: var(--small-font-size);
+        display: flex;
+        align-items: center;
+        column-gap: .25rem;
+
+        &:hover .work__icon{
+            transform: translateX(.25rem);
+        }
+    }
+    &__icon{
+        font-size: 1rem;
+        transition: .4s;
+    }
+}
+
+/* Active item work*/
+.active-work{
+    background-color: var(--first-color);
+    color: var(--body-color);
+}

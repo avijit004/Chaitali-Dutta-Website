@@ -1,0 +1,39 @@
+/*=============== ABOUT ===============*/
+.about{
+    &__container{
+        row-gap: 2.5rem;
+    }
+    &__img{
+        width: 220px;
+        border-radius: 1.5rem;
+        justify-self: center;
+    }
+    &__data{
+        text-align: center;
+    }
+    &__info{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .5rem;
+        margin-bottom: 2rem;
+    }
+    &__box{
+        background-color: var(--container-color);
+        border-radius: .75rem;
+        padding: .75rem .5rem;
+    }
+    &__icon{
+        font-size: 1.5rem;
+        color: var(--first-color);
+        margin-bottom: .5rem;
+    }
+    &__title{
+        font-size: var(--small-font-size);
+    }
+    &__subtitle{
+        font-size: var(--tiny-font-size);
+    }
+    &__description{
+        margin-bottom: 2rem;
+    }
+}
