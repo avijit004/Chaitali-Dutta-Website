@@ -1,4 +1,8 @@
 /*=============== CHANGE BACKGROUND HEADER ===============*/
+document.getElementById('theme-button').addEventListener('click', function () {
+    document.querySelector('header').classList.toggle('dark-theme');
+  });
+
 function scrollHeader(){
     const header = document.getElementById('header')
     // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag

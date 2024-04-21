@@ -62,6 +62,9 @@
 }
 
 /*=============== BASE ===============*/
+header.dark-theme .home__img {
+  filter: invert(1) !important;
+}
 * {
   box-sizing: border-box;
   padding: 0;
