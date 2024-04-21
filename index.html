@@ -18,18 +18,9 @@
 
         <title> Chaitali Dutta Photography - Leading Photographer in the industry </title>
         <script src="smooth-scrolling.js"></script>
-        <script type="module">
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
-            const firebaseConfig = {
-              apiKey: "AIzaSyANIRaJdxkklcbTPgeFj9LCSrMSzzoNxY4",
-              authDomain: "chaitali-dutta-website.firebaseapp.com",
-              projectId: "chaitali-dutta-website",
-              storageBucket: "chaitali-dutta-website.appspot.com",
-              messagingSenderId: "942332299163",
-              appId: "1:942332299163:web:29d0e2290217a143dd833e"
-            };
-            const app = initializeApp(firebaseConfig);
-          </script>
+        <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>  
+        <script type="module" src="./assets/js/main_page_firebase.js"></script>
     </head>
     <body>
         
@@ -64,6 +55,18 @@
                             </a>
                         </li>
 
+                        <li class="nav__item">
+                            <a href="works/" class="nav__link">
+                                <i class='bx bx-image nav__icon'></i>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="blogs/" class="nav__link">
+                                <i class='bx bx-news nav__icon'></i>
+                            </a>
+                        </li>
+                        
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">
                                 <i class='bx bx-message-square-detail nav__icon'></i>
@@ -380,65 +383,16 @@
                 <span class="section__subtitle">My Portfolio</span>
                 <h2 class="section__title">Recent Works</h2>
 
-                <div class="work__filters">
-                    <span class="work__item active-work" data-filter='all'>All</span>
-                    <span class="work__item" data-filter='.web'>Fashion</span>
-                    <span class="work__item" data-filter='.movil'>Street</span>
-                    <span class="work__item" data-filter='.design'>Wildlife</span>
-                </div>
-
                 <div class="work__container container grid">
-                    <div class="work__card mix web">
-                        <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                        <img src="assets/img/work1.jpeg" alt="" class="work__img">
-
-                        <h3 class="work__title">A</h3>
-                        
-                        <a href="" class="work__button">
-                            Read More <i class='bx bx-right-arrow-alt work__icon' ></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card mix movil">
-                        <img src="assets/img/work2.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">B</h3>
-                        
-                        <a href="" class="work__button">
-                            Read More <i class='bx bx-right-arrow-alt work__icon' ></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card mix design">
-                        <img src="assets/img/work3.jpeg" alt="" class="work__img">
-
-                        <h3 class="work__title">C</h3>
-                        
-                        <a href="" class="work__button">
-                            Read More<i class='bx bx-right-arrow-alt work__icon' ></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card mix web">
-                        <img src="assets/img/work4.jpeg" alt="" class="work__img">
-
-                        <h3 class="work__title">D</h3>
-                        
-                        <a href="" class="work__button">
-                            Read More <i class='bx bx-right-arrow-alt work__icon' ></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card mix movil">
-                        <img src="assets/img/work5.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">E</h3>
-                        
-                        <a href="" class="work__button">
-                            Read More <i class='bx bx-right-arrow-alt work__icon' ></i>
-                        </a>
-                    </div>
+                    
+                <!-- here firebase items will come-->
                 </div>
+
+
+                <a href="/works/" class="section__title see-more-button">
+                    <u>See more works <i class="bx bx-right-arrow-alt"></i></u>
+                </a>
+
             </section>
 
             <!--=============== TESTIMONIALS ===============-->
@@ -562,7 +516,7 @@
                         <a href="#about" class="footer__link">About</a>
                     </li>
                     <li>
-                        <a href="#work" class="footer__link">Projects</a>
+                        <a href="#work" class="footer__link">Works</a>
                     </li>
                     <li>
                         <a href="#reviews" class="footer__link">Reviews</a>
