@@ -64,7 +64,6 @@ async function fetchAndRenderPosts() {
         cardDiv.innerHTML = cardContent;
         workContainer.appendChild(cardDiv);
         }
-        console.log(workContainer);
     }
 
 fetchAndRenderPosts();

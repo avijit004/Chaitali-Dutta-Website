@@ -56,7 +56,6 @@ async function fetchAndRenderTags() {
     filterSpan.onclick = () => applyFilter(data.tag_name.toLowerCase()); 
     filtersContainer.appendChild(filterSpan);
     });
-    console.log(filtersContainer);
 }
 async function fetchAndRenderPosts() {
     const postsCollection = collection(db, 'posts');
@@ -85,7 +84,6 @@ async function fetchAndRenderPosts() {
         cardDiv.innerHTML = cardContent;
         workContainer.appendChild(cardDiv);
         }
-        console.log(workContainer);
     }
 
 
